@@ -1,0 +1,72 @@
+/* Universalselektor */
+* {
+    font-family: Arial;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* Allgemeine Einstellungen, gelten für alle Elemente mit diesem Namen*/
+p { 
+    font-size:1rem
+}
+
+h1 { 
+    font-size: 1.8rem;
+}
+
+h2 { 
+    font-size: 1.4rem; 
+}
+
+h3 { 
+    font-size: 1.2rem; 
+}
+
+/* Für alle Überschriften Text zentrieren, untere margin 2rem*/
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;		
+}
+
+/* Navigationsleiste*/
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(0, 162, 255);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem;
+}
+
+li { 
+	font-size: 1.2rem;
+    float: left;
+}
+
+/* Farbänderung beim Hovern*/
+.navbar a:hover{
+    background-color: #4f4f4f;
+}
+
+/* Hauptcontainer: Body, Header, Main*/
+body{
+    width: 90%;
+    margin: auto;
+    }
+
+#index_main {
+	min-height: 25rem;
+    background-image: url(street-map.jpg);
+    /*background-color: #cccccc;*/
+    background-repeat: no-repeat;
+    background-position: center;
+}

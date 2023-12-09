@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <!-- Zeichenkodierung für das HTML-Dokument -->
+        <meta charset="utf-8">
+        <!---->
+        <meta name="description" content="To do">
+        <!-- Stichwörter -->
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <!---->
+        <title>
+            To do 
+        </title>
+        <!---->
+        <link id="css" rel="stylesheet" type="text/css" href="style.css">
+        <link id="css" rel="stylesheet" type="text/css" href="funktion.css">
+        <!---->
+        <script src="funktion.js" async></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                Jetzt loslegen!
+            </h1>
+            <section id="header_section">
+                <nav class = "navbar">
+                    <ul>
+                        <li> <a href="index.html">Start</a> </li>
+                        <li> <a href="#">Funktion</a> </li>
+                        <li> <a href="anleitung.html">Anleitung</a> </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <main id="funktion_main">
+            <h2>
+                To do
+            </h2>
+            <section id="funktion_section">
+
+                <div class="section_item">
+                    <h3> GPS </h3>
+                    <div id="input">
+                        <div id="input_loc">
+                            <label> Ortsangabe</label>
+                            <input type="text", placeholder="z.B. Bäcker", id="loc">
+                        </div>
+                        <br>
+                        <div id="input_radius">
+                            <label> Radius in m</label>
+                            <input type="number", placeholder="z.B. 500",id="rad">
+                        </div>
+                        <br>
+                    </div>
+                    <div id="loc">
+                        <div id="geoloc">
+                            <button onclick="getLocation()"> Lokalisieren </button>
+                            <p id="p_geoloc">Geolocation not available.</p>
+                        </div>
+                        <div id="reset">
+                            <button type="reset"> Zurücksetzen </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section_item">
+                    <h3> Karte </h3>
+                </div>
+
+                <div id= "ergebnisse" class="section_item">
+                    <h3> Ergebnisse </h3>
+                </div>
+
+            </section>
+
+        </main>
+    </body>
+
+</html>
